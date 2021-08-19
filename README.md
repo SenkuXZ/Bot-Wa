@@ -5,10 +5,7 @@
 <a href="#"><img title="Sennku BOT" src="https://img.shields.io/badge/SenkuXZ BOT-blue?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
- <p align="center">
- <img src="https://komarev.com/ghpvc/?username=SenkuXZ&color=blue&label=Profile Views" />
- </p>
-p align="center">
+<p align="center">
 <a href="https://github.com/SenkuXZ"><img title="Author" src="https://img.shields.io/badge/Author-Rapaa-blue.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
