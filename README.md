@@ -5,7 +5,7 @@
 <a href="#"><img title="Sennku BOT" src="https://img.shields.io/badge/SenkuXZ BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/SenkuXZ"><img title="Author" src="https://img.shields.io/badge/Author-Zays-blue.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/SenkuXZ"><img title="Author" src="https://img.shields.io/badge/Author-Rapaa-blue.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
 <a href="https://github.com/SenkuXZ/followers"><img title="Followers" src="https://img.shields.io/github/followers/SenkuXZ?color=blue&style=flat-square"></a>
