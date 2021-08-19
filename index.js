@@ -907,7 +907,6 @@ mentions(_vote,_p,true)
 }	
 
 //******************** 》listMessage《 ********************\\
-
 try{
 switch(tmplt){
 case '+62':
@@ -975,6 +974,8 @@ break
 
 
 //BUTTON 
+//UPDATE BAILEYS TO LAST VERSION SO THAT FEATURE CAN BE USED
+/*
 switch(butresx){
 case 'OWNER': 
 senku.sendMessage(from, {displayname: "jeff", vcard: vcard}, MessageType.contact ,{ quoted : sen})
@@ -995,9 +996,9 @@ break
 
 case 'NOWM' :
   reply(mess.wait)
-					anu = await fetchJson(`http://lolhuman.herokuapp.com/api/tiktok?apikey=HafzzYourBaka&url=${q3}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					tt = `「 *TIKTOK NO WM* 」\n\n*Judul:* ${anu.result.title}\n*Keywords:* ${anu.result.keywords}\n*Desc:* ${anu.result.description}`
+anu = await fetchJson(`http://lolhuman.herokuapp.com/api/tiktok?apikey=HafzzYourBaka&url=${q3}`, {method: 'get'})
+if (anu.error) return reply(anu.error)
+tt = `「 *TIKTOK NO WM* 」\n\n*Judul:* ${anu.result.title}\n*Keywords:* ${anu.result.keywords}\n*Desc:* ${anu.result.description}`
  buff = await getBuffer(anu.result.link)
  senku.sendMessage(from, buff, video, {mimetype: 'video/mp4', quoted: sen,caption : tt})
  break
@@ -1055,10 +1056,10 @@ reply(mess.error)
 break
   
 }
-
+*/
 
 //******************** 》CmdWithPrefix《 ********************\\
-//onst antibot = sen.isBaileys
+//const antibot = sen.isBaileys
 // (antibot === true) return
 switch(command) {
 case 'delvote':
@@ -1172,6 +1173,8 @@ reply(`Error`)
 }
 break
 
+
+/* CAN BE USED AFTER UPDATE LAST BAILEYS
 case 'menu': case 'help':
 tag = owner.split('@')[0]
 mjid = owner
@@ -1229,9 +1232,10 @@ sendEphemeral: false,
                 "thumbnail": fakeg,
                 "sourceUrl": ``
 },mentionedJid:[mjid,sender,mjud]},quoted:sen})
-break
+break*/
 
-case '?':
+
+case 'help': case 'menu':
 if(menusimpel == false){
 tag = owner.split('@')[0]
 mjid = owner
@@ -2079,6 +2083,7 @@ sendMediaURL(from,anu.result.url_video,yt1)
 }
 break
 
+/* CAN BE USED AFTER UPDATE LAST BAILEYS
 case 'play':
 if (!isGroup)return reply(mess.only.group)
 if (args.length < 1) return reply(`Kirim perintah *${prefix}play query*`)
@@ -2105,7 +2110,7 @@ headerType: 4
 await senku.sendMessage(from, gbuttonan, MessageType.buttonsMessage, {quoted:sen})
 })
 break
-
+*/
 
 case 'playmp3': {
 if (!isGroup)return reply(mess.only.group)
