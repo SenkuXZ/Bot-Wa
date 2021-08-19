@@ -1106,6 +1106,10 @@ M o d e l : ${i.phone.device_model}\n\n`
 mentions(monospace(tekss), lbt, true)
 break
 
+case 'sc': case 'script':
+reply(`Sc ini menggunakan : https://github.com/SenkuXZ/Bot-Wa`)
+break
+
 case 'tutorial':
 if(args[0] == 'convert'){
 conv = `${convrt(prefix , pushname)}`
