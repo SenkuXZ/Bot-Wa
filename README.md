@@ -45,3 +45,4 @@ you've just cloned!!
 - [Hardianto](https://github.com/hardiantojek93)
 - [Vean](https://github.com/Veanyxz)
 - [Hexagonz](https://github.com/Hexagonz)
+- [Xinz](https://github.com/Xinz-Team)
