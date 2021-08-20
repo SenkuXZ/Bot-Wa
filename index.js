@@ -326,7 +326,6 @@ const senderNumber = sender.split("@")[0]
 const groupMetadata = isGroup ? await senku.groupMetadata(from) : ''
 const isOwner = ownerNumber.includes(sender)
 const isPremium = isGroup ? _prem.checkPremiumUser(sender,premium) : false
-const isGcPrem = isGroup ? _gcprem.checkPremiumGc(from,premium) : false
 const groupDesc = isGroup ? groupMetadata.desc : ''
 const groupName = isGroup ? groupMetadata.subject : ''
 const groupId = isGroup ? groupMetadata.jid : ''
@@ -1254,7 +1253,7 @@ blan = `${getBalance(sender, balance)}`
 usrr = `${sender.split("@")[0]}`
 runn = process.uptime()
 njing = `${kyun(runn)}`
-senku.sendMessage(from, help(prefix,waktoo,tag,waa,UFree wib,Tanggal,njing,pushname,usrr,premm,premi,limm,glimm,blan), text,{contextInfo :{text: 'hi',
+senku.sendMessage(from, help(prefix,waktoo,tag,waa,UFree, wib,Tanggal,njing,pushname,usrr,premm,premi,limm,glimm,blan), text,{contextInfo :{text: 'hi',
 "forwardingScore": 1000000000,
 isForwarded: false,
 sendEphemeral: false,
