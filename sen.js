@@ -130,6 +130,7 @@ Sering nimbrung dan baca rules grup`
 let	buff = await getBuffer(ppimg)
 senku.sendMessage(mdata.id, buff, MessageType.image, {quoted:fkontakk,caption: teks, contextInfo: {"mentionedJid": [num]}})
 } else if (anu.action == 'remove') {
+if(!left.includes(anu.jid)) return
 num = anu.participants[0]
 try {
 ppimg = await senku.getProfilePicture(`${num.split('@')[0]}@c.us`)
