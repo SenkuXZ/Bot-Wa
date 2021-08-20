@@ -38,7 +38,7 @@ you've just cloned!!
 ### Information
 - Change ownerNumber on [Settings](https://github.com/SenkuXZ/Bot-Wa/blob/main/database/settings.json#L5)
 - Change menu on [Click Here!](https://github.com/SenkuXZ/Bot-Wa/blob/main/lib/menu.js#L3)
-
+- You can change the baileys version to the last one by editing the package.json section [this section](https://github.com/SenkuXZ/Bot-Wa/blob/main/package.json#L23)
 
 ## Thanks to
 - [Baileys](https://github.com/adiwajshing/Baileys)
