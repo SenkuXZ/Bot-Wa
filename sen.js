@@ -109,7 +109,13 @@ if (!welkom.includes(anu.jid)) return
                    }
             }
 if (anu.action == 'add') {
-num = anu.participants[0]  
+num = anu.participants[0]
+try {
+ppimg = await senku.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+} catch {
+ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
+}
+ini_user = senku.contacts[num]
 teks = `Halo @${num.split('@')[0]} 👋\nSelamat datang di Grup
 *${mdata.subject}*
 
@@ -121,39 +127,19 @@ ${shp} Status:
 ${shp} Askot:
 
 Sering nimbrung dan baca rules grup`
-if(picdetec){
-  try {
-ppimg = await senku.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
-} catch {
-ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-}
-y1 = await getBuffer(ppimg)
-senku.sendMessage(mdata.id, y1, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]},quoted : finvite})
-.then((res)=> 
-senku.sendMessage(mdata.id, fs.readFileSync(`./src/stick/wel.webp`), MessageType.sticker, {quoted:res }))
-} else {
-senku.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}, quoted: finvite})
-.then((res)=> 
-senku.sendMessage(mdata.id, fs.readFileSync(`./src/stick/wel.webp`), MessageType.sticker, {quoted:res }))
-}
-
+let	buff = await getBuffer(ppimg)
+senku.sendMessage(mdata.id, buff, MessageType.image, {quoted:fkontakk,caption: teks, contextInfo: {"mentionedJid": [num]}})
 } else if (anu.action == 'remove') {
-if(!left.includes(anu.jid)) return
 num = anu.participants[0]
 try {
-teks = `*Sayonaraa @${num.split('@')[0]}👋*`
-if(picdetec){
-try {
-ppimg = await senku.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+ppimg = await senku.getProfilePicture(`${num.split('@')[0]}@c.us`)
 } catch {
-ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
 }
-y2 = await getBuffer(ppimg)
-senku.sendMessage(mdata.id, y2, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]},quoted : finvite})
-  } else { 
-senku.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}, quoted: finvite})
-}
-
+teks = `*@${num.split('@')[0]} Sayonaraa.*`
+let buff = await getBuffer(ppimg)
+senku.sendMessage(mdata.id, buff, MessageType.image, {quoted : fkontakk,caption: teks, contextInfo: {"mentionedJid": [num]}})
+		
 } else if (anu.action == 'promote') {
 //	const gchange = JSON.parse(fs.readFileSync('./database/gupdated.json'))
 	//if(!gchange.includes(mdata.id)) return
