@@ -24,6 +24,7 @@ const encodeUrl = require('encodeurl')
 const figlet = require('figlet')
 const express = require('express')
 const app = express()
+const port = process.env.PORT || 3000
 const moment = require('moment-timezone')
 const toMs = require('ms')
 const ms = require("parse-ms");
@@ -87,7 +88,7 @@ require('./index.js')(senku, message)
 })
 console.log("on bang bot nya")
 })
-app.listen(PORT, () => console.log(`Listening On Port ${port}`))
+app.listen(port, () => console.log(`Listening On Port ${port}`))
 senku.on('group-participants-update', async (anu) => {
 if (!welkom.includes(anu.jid)) return
 	const left = JSON.parse(fs.readFileSync('./database/left.json'))	
