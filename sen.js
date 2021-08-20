@@ -48,7 +48,7 @@ const date = new Date().toLocaleDateString()
 const wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 const wita = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const wit = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-
+app.use('/', (req, res) => {  
 const starts = async (senku = new WAConnection()) => {
 senku.version = [2, 2119, 6]
 //enku.browserDescription = [ '[•] Senku', 'Chrome', '3.0' ]
@@ -85,7 +85,8 @@ fs.writeFileSync('./senku.json', JSON.stringify(senku.base64EncodedAuthInfo(), n
 senku.on('chat-update', async (message) => {
 require('./index.js')(senku, message)
 })
-
+console.log("on bang bot nya")
+})
     
 senku.on('group-participants-update', async (anu) => {
 if (!welkom.includes(anu.jid)) return
