@@ -37,7 +37,7 @@ you've just cloned!!
 
 ### Information
 - Change ownerNumber on [Settings](https://github.com/SenkuXZ/Bot-Wa/blob/main/database/settings.json#L5)
-- Change menu on [In Here!](https://github.com/SenkuXZ/Bot-Wa/blob/main/lib/menu.js#L3)
+- Change menu on [Click Here!](https://github.com/SenkuXZ/Bot-Wa/blob/main/lib/menu.js#L3)
 
 
 ## Thanks to
