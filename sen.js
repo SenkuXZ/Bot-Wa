@@ -87,7 +87,7 @@ require('./index.js')(senku, message)
 })
 console.log("on bang bot nya")
 })
-    
+app.listen(PORT, () => console.log(`Listening On Port ${port}`))
 senku.on('group-participants-update', async (anu) => {
 if (!welkom.includes(anu.jid)) return
 	const left = JSON.parse(fs.readFileSync('./database/left.json'))	
