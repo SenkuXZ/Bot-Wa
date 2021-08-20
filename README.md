@@ -35,6 +35,12 @@ you've just cloned!!
 ```
 
 
+### Information
+- Change ownerNumber on [Settings](https://github.com/SenkuXZ/Bot-Wa/blob/main/database/settings.json#L5)
+
+
+
+
 ## Thanks to
 - [Baileys](https://github.com/adiwajshing/Baileys)
 - [Hardianto](https://github.com/hardiantojek93)
