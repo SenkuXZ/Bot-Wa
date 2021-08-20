@@ -108,7 +108,6 @@ if (!welkom.includes(anu.jid)) return
                                }
                    }
             }
-const mdata = await senku.groupMetadata(anu.jid)
 if (anu.action == 'add') {
 num = anu.participants[0]  
 teks = `Halo @${num.split('@')[0]} 👋\nSelamat datang di Grup
@@ -140,7 +139,6 @@ senku.sendMessage(mdata.id, fs.readFileSync(`./src/stick/wel.webp`), MessageType
 
 } else if (anu.action == 'remove') {
 if(!left.includes(anu.jid)) return
-const mdata = await senku.groupMetadata(anu.jid)
 num = anu.participants[0]
 try {
 teks = `*Sayonaraa @${num.split('@')[0]}👋*`
