@@ -974,7 +974,6 @@ break
 
 //BUTTON 
 //UPDATE BAILEYS TO LAST VERSION SO THAT FEATURE CAN BE USED
-/*
 switch(butresx){
 case 'OWNER': 
 senku.sendMessage(from, {displayname: "jeff", vcard: vcard}, MessageType.contact ,{ quoted : sen})
@@ -1055,7 +1054,7 @@ reply(mess.error)
 break
   
 }
-*/
+
 
 //******************** 》CmdWithPrefix《 ********************\\
 //const antibot = sen.isBaileys
