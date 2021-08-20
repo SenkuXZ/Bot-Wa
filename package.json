@@ -20,7 +20,7 @@
   "author": "Senku",
   "license": "ISC",
   "dependencies": {
-    "@adiwajshing/baileys": "^3.5.1",
+    "@adiwajshing/baileys": "github:adiwajshing/baileys",
     "async": "^3.2.0",
     "awesome-phonenumber": "^2.55.0",
     "axios": "^0.21.1",
