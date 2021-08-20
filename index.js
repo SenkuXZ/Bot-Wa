@@ -1173,8 +1173,8 @@ reply(`Error`)
 break
 
 
-/* CAN BE USED AFTER UPDATE LAST BAILEYS
-case 'menu': case 'help':
+//CAN BE USED AFTER UPDATE LAST BAILEYS
+case '?':
 tag = owner.split('@')[0]
 mjid = owner
 waa = wa.split('@')[0]
@@ -1214,7 +1214,7 @@ gbutsan = [
 ]
 gbuttonan = {
 imageMessage: mhan1.message.imageMessage,
-contentText: `${help(prefix,waktoo,tag,waa,UFree,UReg,UPrem,THit,wib,Tanggal,njing,pushname,usrr,premm,premi,limm,glimm,blan)}`,
+contentText: `${help(prefix,pushname,usrr,waktoo,tag,waa,UFree,UReg,UPrem,THit,wib,Tanggal,njing,premm,premi,limm,glimm,blan)}`,
 footerText: 'S E N K U  B O T 椮 岁 与',
 buttons: gbutsan,
 headerType: 4
@@ -1231,7 +1231,7 @@ sendEphemeral: false,
                 "thumbnail": fakeg,
                 "sourceUrl": ``
 },mentionedJid:[mjid,sender,mjud]},quoted:sen})
-break*/
+break
 
 
 case 'help': case 'menu':
@@ -1253,7 +1253,7 @@ blan = `${getBalance(sender, balance)}`
 usrr = `${sender.split("@")[0]}`
 runn = process.uptime()
 njing = `${kyun(runn)}`
-senku.sendMessage(from, help(prefix,waktoo,tag,waa,UFree, wib,Tanggal,njing,pushname,usrr,premm,premi,limm,glimm,blan), text,{contextInfo :{text: 'hi',
+senku.sendMessage(from, help(prefix,pushname,usrr,waktoo,tag,waa,UFree, wib,Tanggal,njing,premm,premi,limm,glimm,blan), text,{contextInfo :{text: 'hi',
 "forwardingScore": 1000000000,
 isForwarded: false,
 sendEphemeral: false,
