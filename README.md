@@ -33,3 +33,10 @@ you've just cloned!!
 > Termux
 > WhatsApp
 ```
+
+
+## Thanks to
+- [Baileys](https://github.com/adiwajshing/Baileys)
+- [Hardianto](https://github.com/hardiantojek93)
+- [Vean](https://github.com/Veanyxz)
+- [Hexagonz](https://github.com/Hexagonz)
