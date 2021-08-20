@@ -1253,7 +1253,7 @@ blan = `${getBalance(sender, balance)}`
 usrr = `${sender.split("@")[0]}`
 runn = process.uptime()
 njing = `${kyun(runn)}`
-senku.sendMessage(from, help(prefix,waktoo,tag,waa,UFree, wib,Tanggal,njing,pushname,usrr,premm,premi,limm,glimm,blan), text,{contextInfo :{text: 'hi',
+senku.sendMessage(from, help(prefix,pushname,usrr,waktoo,tag,wa,UFree,THit,wib,Tanggal,njing,,premm,premi,limm,glimm,blan), text,{contextInfo :{text: 'hi',
 "forwardingScore": 1000000000,
 isForwarded: false,
 sendEphemeral: false,
