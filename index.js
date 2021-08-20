@@ -1214,7 +1214,7 @@ gbutsan = [
 ]
 gbuttonan = {
 imageMessage: mhan1.message.imageMessage,
-contentText: `${help(prefix,pushname,usrr,waktoo,tag,waa,UFree,UReg,UPrem,THit,wib,Tanggal,njing,premm,premi,limm,glimm,blan)}`,
+contentText: `${help(prefix,pushname,usrr,waktoo,tag,waa,UFree,THit,wib,Tanggal,njing,premm,premi,limm,glimm,blan)}`,
 footerText: 'S E N K U  B O T 椮 岁 与',
 buttons: gbutsan,
 headerType: 4
