@@ -1,4 +1,5 @@
-const
+
+ const
 	{
 		WAConnection: _WAConnection,
 		MessageType,
@@ -22,9 +23,6 @@ const fs = require('fs')
 const axios = require("axios")  
 const encodeUrl = require('encodeurl')
 const figlet = require('figlet')
-const express = require('express')
-const app = express()
-const port = process.env.PORT || 3000
 const moment = require('moment-timezone')
 const toMs = require('ms')
 const ms = require("parse-ms");
@@ -49,7 +47,7 @@ const date = new Date().toLocaleDateString()
 const wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 const wita = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const wit = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-app.use('/', (req, res) => {  
+
 const starts = async (senku = new WAConnection()) => {
 senku.version = [2, 2119, 6]
 //enku.browserDescription = [ '[•] Senku', 'Chrome', '3.0' ]
@@ -86,9 +84,8 @@ fs.writeFileSync('./senku.json', JSON.stringify(senku.base64EncodedAuthInfo(), n
 senku.on('chat-update', async (message) => {
 require('./index.js')(senku, message)
 })
-console.log("on bang bot nya")
-})
-app.listen(port, () => console.log(`Listening On Port ${port}`))
+
+    
 senku.on('group-participants-update', async (anu) => {
 if (!welkom.includes(anu.jid)) return
 	const left = JSON.parse(fs.readFileSync('./database/left.json'))	
@@ -122,14 +119,11 @@ ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
 ini_user = senku.contacts[num]
 teks = `Halo @${num.split('@')[0]} 👋\nSelamat datang di Grup
 *${mdata.subject}*
-
 Intro Member Baru
-
 ${shp} Nama: 
 ${shp} Umur:
 ${shp} Status:
 ${shp} Askot:
-
 Sering nimbrung dan baca rules grup`
 let	buff = await getBuffer(ppimg)
 senku.sendMessage(mdata.id, buff, MessageType.image, {quoted:fkontakk,caption: teks, contextInfo: {"mentionedJid": [num]}})
@@ -221,11 +215,9 @@ year: 'numeric'
 })
 const type = Object.keys(m.message)[0]
 senku.sendMessage(m.key.remoteJid, `━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
-
     *Nama  : @${m.participant.split("@")[0]}*
     *Jam  : ${jam} ${week} ${calender}*
     *Type  : ${type}*
-
 ━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━`, MessageType.text, {quoted: m.message, contextInfo: {"mentionedJid": [m.participant]}})
 senku.copyNForward(m.key.remoteJid, m.message)
 })
