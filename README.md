@@ -46,3 +46,4 @@ you've just cloned!!
 - [Vean](https://github.com/Veanyxz)
 - [Hexagonz](https://github.com/Hexagonz)
 - [Xinz](https://github.com/Xinz-Team)
+- [Si bgst Bryan](https://github.com/BryanRfly)
