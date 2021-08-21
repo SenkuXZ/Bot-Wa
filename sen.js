@@ -72,7 +72,7 @@ console.log(color('[','white'), color('!','cyan'), color(']','white'), color('Sc
 })
 
 fs.existsSync('./senku.json') && senku.loadAuthInfo('./senku.json')
-require('./lib/Server.js') 
+require('./lib/Server.js')(senku) 
 senku.on('connecting', () => {
 start('2', '[ ! ] Connecting..')
 })
