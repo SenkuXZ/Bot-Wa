@@ -25,6 +25,7 @@ const figlet = require('figlet')
 const moment = require('moment-timezone')
 const toMs = require('ms')
 const ms = require("parse-ms");
+global.con = JSON.parse(fs.readFileSync('./database/settings.json')) 
 const { getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success } = require('./lib/functions')
 const { color } = require('./lib/color')
 fakenomor = '0@s.whatsapp.net'
