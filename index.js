@@ -265,7 +265,7 @@ const cmd = (type === 'conversation' && sen.message.conversation) ? sen.message.
 
 //******************* 》Prefix《 *******************\\
 if(multi){
-var prefix = /^[°•π÷×¶∆£¢€¥®™✓=|~zZ+×_*!#%^&./\\©^]/.test(cmd) ? cmd.match(/^[°•π÷×¶∆£¢€¥®™✓=|~xzZ+×_*!#,|`÷?;:%^&./\\©^]/gi) : '-'	  
+var prefix = /^[°•π÷×¶∆£¢€¥®™✓=|~zZ+×_*!#%^&./\\©^]/.test(cmd) ? cmd.match(/^[°•π÷×¶∆£¢€¥®™✓=|~xzZ+×_*!#,|`÷?;:%^&./\\©^]/gi) : '.'	  
 
 } else {
 if (nopref){
@@ -279,7 +279,7 @@ prefix = prefa
 }
 
 
-body = (type === 'conversation' && sen.message.conversation.startsWith(prefix)) ? sen.message.conversation : (type == 'imageMessage') && sen.message.imageMessage.caption.startsWith(prefix) ? sen.message.imageMessage.caption : (type == 'videoMessage') && sen.message.videoMessage.caption.startsWith(prefix) ? sen.message.videoMessage.caption : (type == 'extendedTextMessage') && sen.message.extendedTextMessage.text.startsWith(prefix) ? sen.message.extendedTextMessage.text : (type == "stickerMessage") && stickerdb[sen.message.stickerMessage.fileSha256.toString("hex")].text ? prefix + stickerdb[sen.message.stickerMessage.fileSha256.toString("hex")].text : ""
+body = (type === 'buttonsResponseMessage' && sen.message.buttonsResponseMessage.selectedButtonId.startsWith(prefix) && m.quoted.sender === senku.user.jid) ? sen.message.buttonsResponseMessage.selectedButtonId :(type === 'conversation' && sen.message.conversation.startsWith(prefix)) ? sen.message.conversation : (type == 'imageMessage') && sen.message.imageMessage.caption.startsWith(prefix) ? sen.message.imageMessage.caption : (type == 'videoMessage') && sen.message.videoMessage.caption.startsWith(prefix) ? sen.message.videoMessage.caption : (type == 'extendedTextMessage') && sen.message.extendedTextMessage.text.startsWith(prefix) ? sen.message.extendedTextMessage.text : (type == "stickerMessage") && stickerdb[sen.message.stickerMessage.fileSha256.toString("hex")].text ? prefix + stickerdb[sen.message.stickerMessage.fileSha256.toString("hex")].text : ""
 
 
 var pes = (type === 'conversation' && sen.message.conversation) ? sen.message.conversation : (type == 'imageMessage') && sen.message.imageMessage.caption ? sen.message.imageMessage.caption : (type == 'videoMessage') && sen.message.videoMessage.caption ? sen.message.videoMessage.caption : (type == 'extendedTextMessage') && sen.message.extendedTextMessage.text ? sen.message.extendedTextMessage.text : ''
@@ -300,7 +300,7 @@ const argss = body.split(/ +/g)
 mess = {
 	wait: '[❕]  _Sedang di proses........._',
 	limit: `[❕] Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`,
-	eror: '_Error_',
+	error: '_Error_',
 	success: '✔️ Berhasil ✔️',
 	error: {
 		stick: '_Ulangi bang_',
