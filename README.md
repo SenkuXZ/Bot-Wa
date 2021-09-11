@@ -15,7 +15,7 @@
 <a href="https://github.com/SenkuXZ/megumikato2/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/SenkuXZ/Bot-Wa?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 <p align='center'>
-   <a href="https://instagram.com/021Senkuu_"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/instagram.jpg?raw=true"></a>
+   <a href="https://instagram.com/021parapaaa_"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/instagram.jpg?raw=true"></a>
 </P>
 
 
