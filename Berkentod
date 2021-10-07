@@ -38,7 +38,7 @@ you've just cloned!!
 
 ## Thanks to
 - [Baileys](https://github.com/adiwajshing/Baileys)
-- [Hardianto](https://github.com/hardiantojek93)
+- [Hardianto](https://github.com/hardianto-cpu)
 - [Vean](https://github.com/Veanyxz)
 - [Hexagonz](https://github.com/Hexagonz)
 - [Xinz](https://github.com/Xinz-Team)
