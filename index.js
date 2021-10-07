@@ -89,9 +89,9 @@ const tmp_hit = JSON.parse(fs.readFileSync('./src/hit.json'))
 const tmphit = JSON.parse(fs.readFileSync('./src/today.json'))
 //******************** 》Setting《 ********************\\
 menusimpel = false
-owner = "6281804680327@s.whatsapp.net"
-ownerN = "6281804680327"
-setgrup = "6281226770537-1606097314@g.us"
+owner = "6281515589573@s.whatsapp.net"
+ownerN = "6281515589573"
+setgrup = "6281515589573-1606097314@g.us"
 wa = '0@s.whatsapp.net'
 blocked = []
 public = true
@@ -153,7 +153,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN:Senku シ︎\n'
             + 'ORG:Owner Senku;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6281804680327:+62 831-1800-241\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6281515589573:+62 831-1800-241\n'
             + 'END:VCARD'
             
 const sleep = async (ms) => {
@@ -862,7 +862,7 @@ if (budy.toLowerCase() === 'vote'){
 let vote = JSON.parse(fs.readFileSync(`./database/pvote/${from}.json`))
 let _votes = JSON.parse(fs.readFileSync(`./database/vote/${from}.json`))  
 let fil = vote.map(v => v.participant)
-let id_vote = sender ? sender : '6281804680327@s.whatsapp.net'
+let id_vote = sender ? sender : '6281515589573@s.whatsapp.net'
 if(fil.includes(id_vote)) {
 return mentions('@'+sender.split('@')[0]+' Anda sudah vote', fil, true)
 } else {
@@ -884,7 +884,7 @@ mentions(_vote,_p,true)
 const vote = JSON.parse(fs.readFileSync(`./database/pvote/${from}.json`))
 let _votes = JSON.parse(fs.readFileSync(`./database/vote/${from}.json`))  
 let fil = vote.map(v => v.participant)
-let id_vote = sender ? sender : '6281804680327@s.whatsapp.net'
+let id_vote = sender ? sender : '6281515589573@s.whatsapp.net'
 if(fil.includes(id_vote)) {
 return mentions('@'+sender.split('@')[0]+' Anda sudah vote', fil, true)
 } else {
