@@ -48,7 +48,7 @@ const wita = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const wit = moment.tz('Asia/Jayapura').format('HH:mm:ss')
 
 const starts = async (senku = new WAConnection()) => {
-senku.version = [2, 2119, 6]
+senku.version = [2, 2140, 12]
 //enku.browserDescription = [ '[•] Senku', 'Chrome', '3.0' ]
 senku.logger.level = 'warn'
 console.log(color(figlet.textSync(`${spc1}Senku Bot Wa`, {
