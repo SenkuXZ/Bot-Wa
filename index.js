@@ -3708,6 +3708,6 @@ return //console.log(color('[WARN]','red'), 'Unregistered Command from', color(s
 }
 }
 } catch (e) {
-console.log('Error : %s', color(e, 'red'))
+//console.log('Error : %s', color(e, 'red'))
 }
 }
