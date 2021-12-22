@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Scan The Qr Above">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="BryanRfly">
+    <meta name="keywords" content="BryanRfly" />
+    <meta name="icon" href="https://telegra.ph/file/7627deab609c3651dddf5.jpg" type="image/jpg"/>
+    <title>Scan The Qr Above || BryanBot</title>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <pre>Scan Qr Ini Dengan Whatsapp Web Mu, Untuk Menjadi Bot!:)</pre><br>
+<img id="qr"></img>
+<script type="text/javascript">
+   const socket = io();
+   socket.on("qr", (qr) => {
+   if (!qr) return document.getElementById("sts").innerText="Connected succses!"
+   document.getElementById("qr").src= qr;
+   })
+   socket.on("con", (d) => {
+   document.getElementById("sts").innerText=`connected to : ${d.jid}`
+   document.getElementById("qr").src= "https://telegra.ph/file/7627deab609c3651dddf5.jpg"})
+   socket.on("close", (d) => {
+   document.getElementById("sts").innerText="Disconnected";
+   document.getElementById("qr").src= null})
+</script>
+  </body>
+</html>
